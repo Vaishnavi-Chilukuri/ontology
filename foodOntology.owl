@@ -1,0 +1,1672 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#"
+     xml:base="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#belongsToFoodGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#belongsToFoodGroup">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasFunction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#isFunctionOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient_Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasNutrient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasNutrient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#isFoundIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#isFoundIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#isFoundIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#isFunctionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#isFunctionOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient_Function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasCalories -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasCalories"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasCarbohydrateContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasCarbohydrateContent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasFatContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#hasFatContent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#AIDS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#AIDS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#BreakFast_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#BreakFast_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Carbohydrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Carbohydrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MacroNutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Chocolate_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Chocolate_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Cycling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Cycling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Dessert_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Dessert_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Diabetes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Diabetes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#DigestiveDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#DigestiveDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Dinner_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Dinner_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Egg_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Egg_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#NonVegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Exercise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Exercise"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Exercise_Suggestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Exercise_Suggestion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Suggestion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MacroNutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fish_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fish_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#NonVegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Suggestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Suggestion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Suggestion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fruit_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fruit_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Grains_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Grains_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighIronFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighIronFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighlyActive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighlyActive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#IceCream_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#IceCream_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Infant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Infant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Iron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Iron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MicroNutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Juice_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Juice_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Liquids_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Legumes_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Legumes_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Liquids_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Liquids_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#LittleActive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#LittleActive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Lunch_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Lunch_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MacroNutrient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MacroNutrient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meat_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meat_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#NonVegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MicroNutrient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MicroNutrient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MilkShake_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MilkShake_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Liquids_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Milk_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Milk_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Liquids_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mineral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mineral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MicroNutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mushroom_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mushroom_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#NonVegetarian_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#NonVegetarian_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient_Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient_Function"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nuts_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nuts_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Old -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Old">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Pregnant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Pregnant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Protein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MacroNutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#RespiratoryDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#RespiratoryDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Run -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Run">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Sedentary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Sedentary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Snack_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Snack_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Starter_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Starter_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meal_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Suggestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Suggestion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Sweet_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Sweet_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetable_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetable_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vitamin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vitamin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MicroNutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Walk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Walk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MacroNutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Wine_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Wine_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Liquids_Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Young -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Young">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#energySources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#energySources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCarbohydratesFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCarbohydratesFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highFatFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highFatFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highProteinFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highProteinFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowCalciumFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowCalciumFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowCalorieFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowCalorieFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowCarbohydratesFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowCarbohydratesFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowFatFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowFatFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowIronFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowIronFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowProteinFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowProteinFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowSugarFoodItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowSugarFoodItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#middleAge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#middleAge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#moderatelyActive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#moderatelyActive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#overWeight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#overWeight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#processed_Food_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#processed_Food_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#promoteGrowthAndDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#promoteGrowthAndDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#regulateBodyFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#regulateBodyFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nutrient_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#threadMill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#threadMill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#underWeight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#underWeight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Almond -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Almond">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nuts_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highProteinFoodItem"/>
+        <belongsToFoodGroup rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nuts"/>
+        <belongsToFoodGroup rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fruit_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+        <belongsToFoodGroup rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fruits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Banana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Banana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fruit_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Beetroot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Beetroot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Iron"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetable_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB9"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#BlackBeans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#BlackBeans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Iron"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Legumes_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#BreakFast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#BreakFast"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#processed_Food_Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Carbohydrates -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Carbohydrates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Carrot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Carrot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetable_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#CashewNut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#CashewNut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Iron"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nuts_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ChickenEgg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ChickenEgg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Egg_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminD"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Chilly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Chilly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetable_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ChocolateIcecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ChocolateIcecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#IceCream_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCarbohydratesFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highFatFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ChocolateMilkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ChocolateMilkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MilkShake_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCarbohydratesFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highFatFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Chocolates -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Chocolates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#CodFish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#CodFish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fish_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowFatFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Copper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Copper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mineral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Corn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Corn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Grains_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highProteinFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#CowMilk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#CowMilk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Milk_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminD"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Cycling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Cycling"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Desserts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Desserts"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Dinner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Dinner"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#DomesticGoatMeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#DomesticGoatMeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meat_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowCalorieFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowFatFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#DuckEgg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#DuckEgg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Egg_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminD"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Eggs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Eggs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fats -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fats"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Female"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fish"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#FiveStar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#FiveStar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Chocolate_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fruits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fruits"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#GingerBread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#GingerBread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Dessert_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Grains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Grains"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#GrowthAndDevelopment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#GrowthAndDevelopment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#GulabJamun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#GulabJamun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Sweet_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighlyActivePerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighlyActivePerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#IceCreams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#IceCreams"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Infant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Infant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Iron"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Jalebi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Jalebi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Sweet_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Juices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Juices"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#KitKat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#KitKat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Chocolate_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCarbohydratesFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highFatFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Legumes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Legumes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Liquids -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Liquids"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#LittleActivePerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#LittleActivePerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Lunch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Lunch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Male"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Manganese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Manganese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mineral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mango -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mango">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fruit_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminK"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCarbohydratesFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Meat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MiddleAgePerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MiddleAgePerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Milk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MilkShake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MilkShake"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Minerals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Minerals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ModeratelyActivePerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ModeratelyActivePerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MoltenChocolteCake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MoltenChocolteCake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Dessert_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighIronFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MulletFish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MulletFish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Fish_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminD"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highProteinFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mushrooms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mushrooms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#NonVegetarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#NonVegetarian"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nuts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Nuts"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#OldPerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#OldPerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#OreoMilkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#OreoMilkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#MilkShake_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#OverWeightedPerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#OverWeightedPerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#PapayaJuice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#PapayaJuice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Juice_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Pizza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Pizza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#processed_Food_Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#PregnantWomen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#PregnantWomen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ProcessedFood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#ProcessedFood"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Proteins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Proteins"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#RedWine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#RedWine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Wine_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#lowFatFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Grains_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalorieFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCarbohydratesFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Running -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Running"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#SedentaryPerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#SedentaryPerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Snacks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Snacks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#SoyaBeans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#SoyaBeans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighIronFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Legumes_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Starters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Starters"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Sweets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Sweets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VanillaIcecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VanillaIcecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#IceCream_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCarbohydratesFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highFatFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highSugarFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetables -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetables"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Vegetarian"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB12"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB3"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB5"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB7"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB9"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminD"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminK"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Walking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Walking"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#WaterContents -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#WaterContents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#WatermelonJuice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#WatermelonJuice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#HighIronFoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Juice_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB3"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highCalciumFoodItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Wheat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Wheat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Grains_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminB"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#VitaminE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Wines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Wines"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#YoungPerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#YoungPerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#energySources -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#energySources"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#regulatingBodyFunction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#regulatingBodyFunction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#underWeightedPerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#underWeightedPerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#zinc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#zinc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mineral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Caesar&apos;sMushroom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Caesar&apos;sMushroom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#Mushroom_Food_Item"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vaishnavi/ontologies/2016/9/food#highFatFoodItem"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
